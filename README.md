@@ -16,7 +16,7 @@ Here’s a basic example of how to use the carousel:
 
 ```jsx
 import React from "react";
-import Carousel from "react-carousel-package";
+import Carousel from "react-carousel-package-2";
 
 const images = [
   { src: "image1.jpg", description: "Slide 1" },
