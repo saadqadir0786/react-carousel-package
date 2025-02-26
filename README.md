@@ -7,25 +7,26 @@ A lightweight, customizable carousel component for React applications.
 Install the package via npm:
 
 ```sh
-npm install react-carousel-package
+npm install react-carousel-package-2
 ```
 
 ## 🚀 Usage
 
 Here’s a basic example of how to use the carousel:
 
-import React from 'react';
-import Carousel from 'react-carousel-package';
+```jsx
+import React from "react";
+import Carousel from "react-carousel-package";
 
 const images = [
-{ src: 'image1.jpg', description: 'Slide 1' },
-{ src: 'image2.jpg', description: 'Slide 2' },
-{ src: 'image3.jpg', description: 'Slide 3' },
+  { src: "image1.jpg", description: "Slide 1" },
+  { src: "image2.jpg", description: "Slide 2" },
+  { src: "image3.jpg", description: "Slide 3" },
 ];
 
 const App = () => {
-return (
-<Carousel
+  return (
+    <Carousel
       images={images}
       autoPlay={true}
       interval={3000}
@@ -33,10 +34,11 @@ return (
       showArrows={true}
       showIndicators={true}
     />
-);
+  );
 };
 
 export default App;
+```
 
 ## ⚙️ Props
 
@@ -53,3 +55,7 @@ export default App;
 | `arrowStyle`        | `React.CSSProperties` | `{}`         | Custom styles for the navigation arrows.               |
 | `containerStyle`    | `React.CSSProperties` | `{}`         | Custom styles for the entire carousel container.       |
 | `height`            | `string`              | `"100%"`     | Sets the height of the carousel.                       |
+
+```
+
+```
