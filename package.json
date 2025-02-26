@@ -11,7 +11,6 @@
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"No tests specified\"",
-    "postinstall": "npx husky-init",
     "lint": "lint-staged",
     "license": "echo 'MIT License' > LICENSE",
     "prepare": "npm run build"
@@ -38,7 +37,6 @@
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
     "rollup": "^4.34.8",
     "rollup-plugin-peer-deps-external": "^2.2.4",
