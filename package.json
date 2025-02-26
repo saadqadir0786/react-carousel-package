@@ -2,15 +2,25 @@
   "name": "react-carousel-package",
   "version": "1.0.0",
   "main": "index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist", "src"
+  ],
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"No tests specified\"",
     "postinstall": "npx husky-init",
     "lint": "lint-staged",
-    "license": "echo 'MIT License' > LICENSE"
+    "license": "echo 'MIT License' > LICENSE",
+    "prepare": "npm run build"
   },
-  "keywords": [],
-  "author": "Saad Qadir <https://github.com/saadqadir0786/>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saadqadir0786/react-carousel-package.git"
+  },
+  "keywords": ["react", "carousel", "slider", "image-slider"],
+  "author": "Saad Qadir",
   "license": "MIT",
   "description": "React Carousel is a fully customizable and lightweight carousel component built for React applications. It provides smooth transitions, autoplay, infinite scrolling, and navigation controls, making it easy to integrate into any project.",
   "dependencies": {
