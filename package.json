@@ -4,12 +4,15 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests specified\"",
+    "postinstall": "npx husky-init",
+    "lint": "lint-staged",
+    "license": "echo 'MIT License' > LICENSE"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Saad Qadir <https://github.com/saadqadir0786/>",
+  "license": "MIT",
+  "description": "React Carousel is a fully customizable and lightweight carousel component built for React applications. It provides smooth transitions, autoplay, infinite scrolling, and navigation controls, making it easy to integrate into any project.",
   "dependencies": {
     "react": "^19.0.0"
   },
@@ -19,6 +22,8 @@
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "rollup": "^4.34.8",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
